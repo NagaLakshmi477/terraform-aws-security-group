@@ -1,8 +1,8 @@
-variable "sg_name" {
+variable "frontend_sg_name" {
   type = string
 }
 
-variable "sg_description" {
+variable "frontend_sg_description" {
   type = string
 }
 
@@ -18,4 +18,8 @@ variable "environment" {
 }
 
 variable "sg_tags" {
+  type = map(string)
+  default = {
+   
+  }
 }
